@@ -1,6 +1,5 @@
 package robotlegs.bender.bundles
 {
-import robotlegs.bender.extensions.commandCenter.CommandCenterExtension;
 import robotlegs.bender.extensions.contextView.ContextViewExtension;
 import robotlegs.bender.extensions.contextView.ContextViewListenerConfig;
 import robotlegs.bender.extensions.enhancedLogging.InjectableLoggerExtension;
@@ -44,7 +43,6 @@ import robotlegs.bender.framework.api.IContext;
 //				SARSContextViewExtension,
 				EventDispatcherExtension,
 				ModularityExtension,
-				CommandCenterExtension,
 				EventCommandMapExtension,
 				LocalEventMapExtension,
 				ViewManagerExtension,
