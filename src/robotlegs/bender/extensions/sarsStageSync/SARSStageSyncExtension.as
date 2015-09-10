@@ -12,7 +12,7 @@ package robotlegs.bender.extensions.sarsStageSync
 	import flash.display.DisplayObjectContainer;
 	import flash.events.Event;
 	
-	import org.hamcrest.object.instanceOf;
+import robotlegs.bender.extensions.matching.instanceOfType;
 
 import robotlegs.bender.extensions.contextView.ContextView;
 
@@ -71,10 +71,10 @@ import robotlegs.bender.extensions.sarsIntegration.api.StarlingCollection;
 			_context = context;
 			_logger = context.getLogger(this);
 			_context.addConfigHandler(
-				instanceOf(ContextView),
+				instanceOfType(ContextView),
 				handleContextView);
 			_context.addConfigHandler(
-				instanceOf(StarlingCollection),
+				instanceOfType(StarlingCollection),
 				handleStarlingCollection);
 		}
 

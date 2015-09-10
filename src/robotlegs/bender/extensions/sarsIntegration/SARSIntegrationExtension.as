@@ -9,7 +9,7 @@ package robotlegs.bender.extensions.sarsIntegration
 {
 	import away3d.containers.View3D;
 	
-	import org.hamcrest.object.instanceOf;
+	import robotlegs.bender.extensions.matching.instanceOfType;
 	
 	import robotlegs.bender.extensions.sarsIntegration.api.IAway3DViewMap;
 	import robotlegs.bender.extensions.sarsIntegration.api.IStarlingViewMap;
@@ -55,8 +55,8 @@ package robotlegs.bender.extensions.sarsIntegration
 			_context = context;
 			_logger = context.getLogger(this);
 			
-			_context.addConfigHandler(instanceOf(StarlingCollection), handleStarlingCollection);
-			_context.addConfigHandler(instanceOf(View3D), handleView3D);
+			_context.addConfigHandler(instanceOfType(StarlingCollection), handleStarlingCollection);
+			_context.addConfigHandler(instanceOfType(View3D), handleView3D);
 		}
 		
 		/**
